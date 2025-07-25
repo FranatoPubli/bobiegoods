@@ -1,0 +1,132 @@
+:root {
+  --bg-main: #0a0a0a;
+  --primary: #00ffff;
+  --secondary: #a020f0;
+  --text: #ffffff;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-main);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(circle, #0a0a0a, #1a1a1a);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: var(--text);
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--secondary);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--secondary);
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.benefit {
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.benefit h3 {
+  margin-top: 1rem;
+  color: var(--primary);
+}
+
+.offer {
+  background: linear-gradient(135deg, #1f004d, #390099);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.offer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.offer ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+  list-style: none;
+}
+
+.testimonials, .faq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial, .faq-item {
+  background: var(--glass);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
